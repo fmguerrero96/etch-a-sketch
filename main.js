@@ -8,7 +8,7 @@ function createBoard(size) {
 
     let numDIvs = size * size;
     for (let i = 0; i < numDIvs; i++){
-        let div = document.createElement('div');//creating cells
+        let div = document.createElement('div'); //creating cells
         div.className = 'cell'
         div.addEventListener('mouseover', colorDiv)
         board.insertAdjacentElement("beforeend", div)//inserting cells into container
