@@ -12,12 +12,14 @@ h1 {
     display: flex;
     justify-content: center;
     align-content:space-around;
+    margin-bottom: 10px;
 }
 
 .color.buttons {
     display: flex;
     justify-content: center;
     align-content: space-between;
+    margin-top: 10px;
 }
 
 .button {
@@ -32,17 +34,7 @@ h1 {
 .board.container {
     width: 600px;
     background-color: aliceblue;
-    margin-left: 650px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin:auto;
     display: flex;
     flex-wrap: wrap;
-}
-
-.row {
-    display: flex;
-}
-
-.cell {
-    border: 1px solid black;
 }
