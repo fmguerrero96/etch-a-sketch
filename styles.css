@@ -12,14 +12,14 @@ h1 {
     display: flex;
     justify-content: center;
     align-content:space-around;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .color.buttons {
     display: flex;
     justify-content: center;
     align-content: space-between;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .button {
@@ -33,8 +33,8 @@ h1 {
 
 .board.container {
     width: 600px;
+    height: 600px;
     background-color: aliceblue;
     margin:auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
 }
