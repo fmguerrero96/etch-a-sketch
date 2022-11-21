@@ -37,7 +37,7 @@ h1 {
 .board.container {
     width: 600px;
     height: 600px;
-    background-color: rgb(240, 248, 255);
+    background-color: aliceblue;
     margin:auto;
     display: grid;
 }

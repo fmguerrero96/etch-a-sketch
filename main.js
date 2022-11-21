@@ -9,6 +9,7 @@ function createBoard(size) {
     let numDIvs = size * size;
     for (let i = 0; i < numDIvs; i++){
         let div = document.createElement('div');//creating cells
+        div.className = 'cell'
         div.addEventListener('mouseover', colorDiv)
         board.insertAdjacentElement("beforeend", div)//inserting cells into container
 
@@ -16,7 +17,7 @@ function createBoard(size) {
 }
 
 function colorDiv(){
-    if (color == 'random')
+    if (color == 'rainbow')
         {this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;}
         else if (color == 'blue')
         {this.style.backgroundColor = 'rgb(0, 145, 255)';}
@@ -29,6 +30,10 @@ function colorDiv(){
 
 function changeColor(colorChoice){
     color = colorChoice;
+}
 
+function clearBoard(){
+    let divs = document.querySelectorAll('.cell');
+    divs.forEach((div) => div.style.backgroundColor = 'rgb(240, 248, 255)');
 }
 
