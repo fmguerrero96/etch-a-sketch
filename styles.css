@@ -11,8 +11,11 @@ h1 {
 .size.buttons {
     display: flex;
     justify-content: center;
-    align-content:space-around;
+    align-items: center;
     margin-bottom: 20px;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .color.buttons {
@@ -34,7 +37,7 @@ h1 {
 .board.container {
     width: 600px;
     height: 600px;
-    background-color: aliceblue;
+    background-color: rgb(240, 248, 255);
     margin:auto;
     display: grid;
 }

@@ -10,20 +10,20 @@
 </head>
 <body>
     <h1>Etch-A-Sketch</h1>
-    <div class="size buttons">
-        <button class="small button">25 x 25</button>
-        <button class="medium button">50 x 50</button>
-        <button class="large button">100 x 100</button>
+    <div class="size buttons"> Select a board size:  
+        <button class="small button" onclick="createBoard(25)">25 x 25</button>
+        <button class="medium button" onclick="createBoard(50)">50 x 50</button>
+        <button class="large button" onclick="createBoard(100)">100 x 100</button>
     </div>
     <div class="board container" id="board">
 
     </div>
     <div class="color buttons">
-        <button class="clear button">CLEAR</button>
-        <button class="black button">BLACK</button>
-        <button class="blue button">BLUE</button>
-        <button class="red button">RED</button>
-        <button class="rainbow button">RAINBOW</button>
+        <button class="clear button" onclick="changeColor('white')">CLEAR</button>
+        <button class="black button" onclick="changeColor('black')">BLACK</button>
+        <button class="blue button" onclick="changeColor('blue')">BLUE</button>
+        <button class="red button" onclick="changeColor('red')">RED</button>
+        <button class="rainbow button" onclick="changeColor('rainbow')">RAINBOW</button>
     </div>
 </body>
 </html>
